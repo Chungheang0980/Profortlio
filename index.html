@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ly Chungheang | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas class="shader-canvas" data-shader-canvas aria-hidden="true"></canvas>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Home">
+        <img src="assets/profile.jpg" alt="" />
+        <span>Portfolio</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievement">Achievement</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="menu-button" type="button" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home">
+        <div class="hero-frame">
+        <div class="hero-copy">
+          <p class="status-pill">Open to opportunities</p>
+          <p class="eyebrow">Hi, I'm</p>
+          <h1 data-name>Ly Chungheang</h1>
+          <h2 class="hero-role" data-role>AI Enthusiast & Software Developer</h2>
+          <p class="hero-text" data-intro></p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button secondary" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+        </div>
+        <div class="portrait-wrap">
+          <img class="portrait" data-photo src="assets/profile.jpg" alt="Portrait of Ly Chungheang" />
+          <div class="portrait-panel">
+            <span>Available for</span>
+            <strong>Internships & projects</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div>
+          <p class="section-kicker">About Me</p>
+          <h2>I build useful AI, data, and web projects.</h2>
+        </div>
+        <div class="about-content">
+          <p data-about></p>
+          <div class="highlight-grid" data-highlights></div>
+          <div class="inline-actions">
+            <a class="button primary" data-resume href="#">Download Resume</a>
+            <a class="button secondary" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section timeline-section" id="education">
+        <div class="section-heading">
+          <p class="section-kicker">Education</p>
+          <h2>Academic background.</h2>
+        </div>
+        <div class="timeline" data-education></div>
+      </section>
+
+      <section class="section timeline-section" id="experience">
+        <div class="section-heading">
+          <p class="section-kicker">Experience</p>
+          <h2>Recent focus.</h2>
+        </div>
+        <div class="timeline" data-experience></div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-heading">
+          <p class="section-kicker">Skills</p>
+          <h2>Tools and technologies I use.</h2>
+        </div>
+        <div class="skill-list" data-skills></div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading row">
+          <div>
+            <p class="section-kicker">Projects</p>
+            <h2>GitHub projects.</h2>
+            <p class="section-subtitle">
+              Public repositories focused on finance tools, data workflows, security concepts, and practical development.
+            </p>
+          </div>
+          <a class="text-link" href="#contact">Let's talk</a>
+        </div>
+        <div class="project-grid" data-projects></div>
+      </section>
+
+      <section class="section" id="achievement">
+        <div class="section-heading row">
+          <div>
+            <p class="section-kicker">Achievement</p>
+            <h2>Certificates.</h2>
+            <p class="section-subtitle">
+              Certificates and supporting documents from learning, events, and professional development.
+            </p>
+          </div>
+          <a class="text-link" href="#contact">Contact me</a>
+        </div>
+        <div class="achievement-grid" data-achievements></div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Have a project or opportunity?</h2>
+          <p class="contact-copy">Send a message and I will reply as soon as possible.</p>
+        </div>
+        <form class="contact-card" action="mailto:lychungheang16@gmail.com" method="post" enctype="text/plain">
+          <label>
+            <span>Name</span>
+            <input name="name" type="text" placeholder="Your name" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" placeholder="your@email.com" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Tell me about your project"></textarea>
+          </label>
+          <button class="button primary" type="submit">Send Message</button>
+          <div class="direct-contact">
+            <a data-email href="mailto:lychungheang16@gmail.com">lychungheang16@gmail.com</a>
+          </div>
+          <div class="socials" data-socials></div>
+        </form>
+      </section>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
