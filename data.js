@@ -11,7 +11,7 @@ const portfolioData = {
   about:
     "I am a Data Science student focused on turning technical coursework and experiments into useful software. My experience includes Khmer OCR and license plate recognition research, IT event support, volunteer teaching, and GitHub projects in finance tools, data workflows, and security-focused software.",
   highlights: [
-    { value: "4", label: "Public GitHub Repos" },
+    { value: "5", label: "Public GitHub Repos" },
     { value: "Python", label: "Main Language" },
     { value: "JS", label: "Web Tools" }
   ],
@@ -82,6 +82,14 @@ const portfolioData = {
     }
   ],
   projects: [
+    {
+      title: "Bank Transaction Scanner",
+      category: "OCR / Full-stack",
+      description:
+        "An OCR-based system for extracting transaction details from bank receipt images, with receipt classification and a FastAPI, Next.js, MongoDB processing workflow.",
+      tools: ["Python", "FastAPI", "Next.js", "TensorFlow", "Tesseract OCR", "MongoDB"],
+      link: "https://github.com/chantharith-NY/Bank-Transaction-Scanner"
+    },
     {
       title: "Banking Security",
       category: "Python / Security",
